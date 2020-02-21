@@ -5,8 +5,10 @@
       Restaurant Menu
     </title>
     <meta charset="UTF-8" />
+    <link href="styles/index.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <h1>Welcome to our menu!</h1>
     <!-- Navigation -->
     <div>
       <nav>
@@ -25,7 +27,6 @@
     </div>
     <!-- /Navigation -->
     <p>This is the sidebar!</p>
-    <h1>Welcome to our menu!</h1>
     <!-- Food table -->
     <table>
       <thead>
@@ -123,53 +124,67 @@
         <legend>
           Leave us a comment
         </legend>
+
+        <span> We won't share this information. </span>
+
         <!-- FIRST NAME -->
-        <div>
+        <div class="optionContainer">
           <label for="firstName">First name :</label>
-          <input type="text" id="firstName" />
+          <input type="text" id="firstName" class="formElement" />
         </div>
         <!-- LAST NAME -->
-        <div>
+        <div class="optionContainer">
           <label for="lastName">Last name :</label>
-          <input type="text" id="lastName" />
+          <input type="text" id="lastName" class="formElement" />
         </div>
         <!-- EMAIL -->
-        <div>
+        <div class="optionContainer">
           <label for="email">Email :</label>
-          <input type="email" id="email" />
+          <input type="email" id="email" class="formElement" />
         </div>
         <!-- PHONE -->
-        <div>
+        <div class="optionContainer">
           <label for="phone">Phone number :</label>
-          <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
+          <input
+            type="tel"
+            id="phone"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            class="formElement"
+            name="phone"
+          />
         </div>
         <!-- RATING -->
-        <div>
+        <div class="optionContainer">
           <label for="rating">Rate us:</label>
         </div>
-        <select id="rating">
+        <select id="rating" name="rating">
           <option value="VG">Very good</option>
           <option value="G">Good</option>
           <option value="B">Bad</option>
           <option value="VB">Very bad</option>
         </select>
         <!-- COMMENT -->
-        <div>
+        <div class="optionContainer">
           <label for="comment">Your comment:</label>
         </div>
         <textarea id="comment"></textarea>
         <!-- VISIT AGAIN -->
         <p>Would you visit us again?</p>
-        <div>
+        <div class="optionContainer">
           <label for="yesVisit">Yes</label>
-          <input type="radio" id="yesVisit" />
+          <input type="radio" id="yesVisit" class="formElement" name="visit" />
         </div>
-        <div>
+        <div class="optionContainer">
           <label for="noVisit">No</label>
-          <input type="radio" id="noVisit" />
+          <input type="radio" id="noVisit" class="formElement" name="visit" />
         </div>
         <!-- SUBMIT -->
-        <input type="submit" />
+        <button type="submit" class="clickable reset-btn">
+          Reset
+        </button>
+        <button type="submit" class="clickable submit-btn">
+          Submit
+        </button>
       </fieldset>
     </form>
     <footer>

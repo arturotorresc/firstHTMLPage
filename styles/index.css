@@ -1,0 +1,76 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  color: hsl(221, 9%, 34%);
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px;
+  background-color: rgb(46, 46, 46);
+  color: white;
+}
+
+fieldset {
+  border: 2px dashed rgb(205, 205, 205);
+  margin: 20px;
+  padding: 20px;
+}
+
+legend {
+  font-weight: 600;
+}
+
+fieldset > span {
+  color: #42579c;
+  border: 1px solid #627880;
+  padding: 20px 40px;
+  background-color: #cce9f8;
+  display: block;
+}
+
+.formElement {
+  padding: 5px 10px;
+  width: 300px;
+}
+
+.optionContainer {
+  margin-top: 15px;
+}
+
+#rating {
+  width: 200px;
+}
+
+.clickable {
+  padding: 15px 20px;
+  margin-left: 15px;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.clickable:hover {
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: rgb(85, 184, 85);
+}
+
+.submit-btn:hover {
+  background-color: rgb(98, 208, 98);
+}
+
+.reset-btn {
+  background-color: rgb(235, 77, 77);
+}
+
+.reset-btn:hover {
+  background-color: rgb(245, 118, 118);
+}
